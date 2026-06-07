@@ -1,0 +1,164 @@
+/* ============================================
+   SUSHI CHARO — Reseñas Page Styles
+   ============================================ */
+
+.reviews-stats {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--color-black-card);
+  border-radius: var(--radius-lg);
+}
+
+.reviews-stats__item h3 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--color-red);
+}
+
+.reviews-stats__item p {
+  color: var(--color-gray-300);
+  font-size: 0.85rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .reviews-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.reviews-carousel {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--space-md);
+}
+
+.reviews-track {
+  display: flex;
+  gap: var(--space-md);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .review-slide {
+    flex: 0 0 calc(50% - var(--space-md) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .review-slide {
+    flex: 0 0 calc(33.333% - var(--space-md) * 2 / 3);
+  }
+}
+
+.testimonial-card {
+  background: var(--color-black-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.testimonial-card:hover {
+  border-color: rgba(229, 57, 53, 0.3);
+  transform: translateY(-4px);
+}
+
+.testimonial-card__quote {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--color-red);
+  line-height: 0.5;
+  margin-bottom: var(--space-md);
+  opacity: 0.5;
+}
+
+.testimonial-card__text {
+  color: var(--color-gray-300);
+  font-style: italic;
+  line-height: 1.8;
+  flex-grow: 1;
+  margin-bottom: var(--space-lg);
+}
+
+.testimonial-card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.testimonial-card__avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-red);
+}
+
+.testimonial-card__info h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.testimonial-card__info .stars {
+  margin-bottom: 2px;
+}
+
+.testimonial-card__info span {
+  font-size: 0.75rem;
+  color: var(--color-gray-500);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-lg);
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-gray-700);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.carousel-dot--active {
+  background: var(--color-red);
+  transform: scale(1.3);
+}
+
+.reviews-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+  margin-top: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

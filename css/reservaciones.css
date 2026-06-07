@@ -1,0 +1,164 @@
+/* ============================================
+   SUSHI CHARO — Reservaciones Page Styles
+   ============================================ */
+
+.reservation-layout {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.reservation-info {
+  background: var(--color-black-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.reservation-info h3 {
+  color: var(--color-red);
+  margin-bottom: var(--space-md);
+}
+
+.reservation-info ul {
+  margin-bottom: var(--space-lg);
+}
+
+.reservation-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  color: var(--color-gray-300);
+  font-size: 0.9rem;
+}
+
+.reservation-info li::before {
+  content: '•';
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+.reservation-form-wrap {
+  background: var(--color-black-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.reservation-form {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-gray-300);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-black);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  color: var(--color-white);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-red);
+  box-shadow: 0 0 0 3px rgba(229, 57, 53, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-gray-500);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group--error input,
+.form-group--error select,
+.form-group--error textarea {
+  border-color: var(--color-red);
+}
+
+.form-error {
+  font-size: 0.75rem;
+  color: var(--color-red-light);
+  min-height: 1rem;
+}
+
+.form-row {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+}
+
+.form-submit {
+  margin-top: var(--space-sm);
+}
+
+.form-submit .btn {
+  width: 100%;
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: var(--space-xl);
+}
+
+.form-success--visible {
+  display: block;
+}
+
+.form-success svg {
+  width: 64px;
+  height: 64px;
+  fill: var(--color-red);
+  margin-inline: auto;
+  margin-bottom: var(--space-md);
+}
+
+.form-success h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.form-success p {
+  color: var(--color-gray-300);
+  margin-inline: auto;
+}
+
+.reservation-form--hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .reservation-layout {
+    grid-template-columns: 1fr 1.5fr;
+    align-items: start;
+  }
+}

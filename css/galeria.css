@@ -1,0 +1,131 @@
+/* ============================================
+   SUSHI CHARO — Galería Page Styles
+   ============================================ */
+
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xl);
+}
+
+.gallery-filter {
+  padding: var(--space-xs) var(--space-md);
+  font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-gray-300);
+  background: var(--color-black-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50px;
+  transition: all var(--transition-base);
+}
+
+.gallery-filter:hover {
+  color: var(--color-white);
+  border-color: rgba(229, 57, 53, 0.4);
+}
+
+.gallery-filter--active {
+  background: var(--color-red);
+  color: var(--color-white);
+  border-color: var(--color-red);
+}
+
+.gallery-masonry {
+  columns: 1;
+  column-gap: var(--space-sm);
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: var(--space-sm);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.gallery-item--hidden {
+  opacity: 0;
+  transform: scale(0.9);
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(229, 57, 53, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-base);
+}
+
+.gallery-item:hover .gallery-item__overlay {
+  background: rgba(10, 10, 10, 0.5);
+}
+
+.gallery-item__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.gallery-item:hover .gallery-item__icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.gallery-item__icon svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+
+@media (min-width: 480px) {
+  .gallery-masonry {
+    columns: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-masonry {
+    columns: 3;
+    column-gap: var(--space-md);
+  }
+
+  .gallery-item {
+    margin-bottom: var(--space-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-masonry {
+    columns: 4;
+  }
+}

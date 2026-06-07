@@ -1,0 +1,142 @@
+/* ============================================
+   SUSHI CHARO — Equipo Page Styles
+   ============================================ */
+
+.team-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+.team-card {
+  position: relative;
+  background: var(--color-black-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-card__image-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+
+.team-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow), filter var(--transition-slow);
+}
+
+.team-card:hover .team-card__image {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+.team-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(10, 10, 10, 0.95) 100%);
+  pointer-events: none;
+}
+
+.team-card__badge {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-red);
+  color: var(--color-white);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+}
+
+.team-card__body {
+  padding: var(--space-lg);
+  text-align: center;
+  margin-top: -var(--space-xl);
+  position: relative;
+  z-index: 1;
+}
+
+.team-card__name {
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  margin-bottom: var(--space-xs);
+}
+
+.team-card__role {
+  color: var(--color-red);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.team-card__desc {
+  color: var(--color-gray-300);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-inline: auto;
+}
+
+.team-card--featured {
+  grid-column: 1 / -1;
+}
+
+.team-card--featured .team-card__image-wrap {
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 480px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-card--featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-card--featured .team-card__image-wrap {
+    aspect-ratio: auto;
+    min-height: 400px;
+  }
+
+  .team-card--featured .team-card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 0;
+    padding: var(--space-xl);
+  }
+}
+
+.team-intro {
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: var(--space-xl);
+}
+
+.team-intro p {
+  color: var(--color-gray-300);
+  margin-inline: auto;
+}

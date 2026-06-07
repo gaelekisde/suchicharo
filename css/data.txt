@@ -1,0 +1,5 @@
+cesar = CEO
+rocio = rh
+julieta = administracion y atencion al cliente
+ivan = jefe de cocina
+trabajadores x

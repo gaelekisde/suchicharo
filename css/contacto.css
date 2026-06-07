@@ -1,0 +1,144 @@
+/* ============================================
+   SUSHI CHARO — Contacto Page Styles
+   ============================================ */
+
+.contact-layout {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.contact-info {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.contact-card {
+  background: var(--color-black-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.contact-card:hover {
+  border-color: rgba(229, 57, 53, 0.3);
+  transform: translateY(-4px);
+}
+
+.contact-card__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(229, 57, 53, 0.1);
+  margin-bottom: var(--space-md);
+}
+
+.contact-card__icon svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--color-red);
+}
+
+.contact-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-sm);
+}
+
+.contact-card p,
+.contact-card a {
+  color: var(--color-gray-300);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.contact-card a:hover {
+  color: var(--color-red);
+}
+
+.contact-social {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.contact-social a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  transition: background var(--transition-fast);
+}
+
+.contact-social a:hover {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.contact-hours {
+  background: var(--color-black-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-hours h3 {
+  color: var(--color-red);
+  margin-bottom: var(--space-md);
+}
+
+.contact-hours table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-hours td {
+  padding: var(--space-xs) 0;
+  font-size: 0.9rem;
+  color: var(--color-gray-300);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.contact-hours td:first-child {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.contact-hours td:last-child {
+  text-align: right;
+}
+
+.contact-map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(30%) contrast(1.1);
+}
+
+@media (min-width: 768px) {
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-map {
+    grid-column: 1 / -1;
+  }
+}
