@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserva tu mesa en Sushi Charo. Formulario de reservaciones en línea. Disfruta la mejor experiencia gastronómica japonesa.">
+  <title>Reservaciones — Sushi Charo</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logos/logo.svg">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/reservaciones.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Sushi Charo - Inicio">
+        <img src="assets/logos/logo.svg" alt="Logo Sushi Charo" width="160" height="48">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="menu.html" class="nav__link">Menú</a></li>
+          <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+          <li><a href="equipo.html" class="nav__link">Equipo</a></li>
+          <li><a href="galeria.html" class="nav__link">Galería</a></li>
+          <li><a href="resenas.html" class="nav__link">Reseñas</a></li>
+          <li><a href="reservaciones.html" class="nav__link">Reservaciones</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Inicio</a></li>
+      <li><a href="menu.html" class="mobile-nav__link">Menú</a></li>
+      <li><a href="nosotros.html" class="mobile-nav__link">Nosotros</a></li>
+      <li><a href="equipo.html" class="mobile-nav__link">Equipo</a></li>
+      <li><a href="galeria.html" class="mobile-nav__link">Galería</a></li>
+      <li><a href="resenas.html" class="mobile-nav__link">Reseñas</a></li>
+      <li><a href="reservaciones.html" class="mobile-nav__link">Reservaciones</a></li>
+      <li><a href="contacto.html" class="mobile-nav__link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__content container">
+        <span class="section-label" data-aos="fade-in">Reserva</span>
+        <h1 data-aos="fade-up">Reservaciones</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Asegura tu lugar y vive una experiencia gastronómica inolvidable.</p>
+      </div>
+    </section>
+
+    <section class="section section--dark" aria-labelledby="reservation-heading">
+      <div class="container">
+        <div class="reservation-layout">
+          <aside class="reservation-info" data-aos="fade-right">
+            <h3 id="reservation-heading">Información de Reservación</h3>
+            <ul>
+              <li>Las reservaciones se confirman en un plazo de 2 horas.</li>
+              <li>Para grupos de más de 10 personas, llámanos directamente.</li>
+              <li>Tolerancia de 15 minutos; después la mesa puede ser liberada.</li>
+              <li>Cancelaciones con al menos 4 horas de anticipación.</li>
+            </ul>
+            <h3>Horarios de Servicio</h3>
+            <ul>
+              <li>Lunes a Jueves: 12:00 PM - 10:00 PM</li>
+              <li>Viernes y Sábado: 12:00 PM - 11:00 PM</li>
+              <li>Domingo: 12:00 PM - 9:00 PM</li>
+            </ul>
+            <p style="margin-top: 1rem; color: var(--color-gray-300); font-size: 0.9rem;">¿Prefieres reservar por teléfono?<br><strong style="color: var(--color-red);">861 619 9012</strong></p>
+          </aside>
+
+          <div class="reservation-form-wrap" data-aos="fade-left">
+            <form class="reservation-form" id="reservation-form" novalidate>
+              <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+                <span class="form-error" role="alert"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">Teléfono *</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" required autocomplete="tel">
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="correo">Correo electrónico *</label>
+                  <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required autocomplete="email">
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fecha">Fecha *</label>
+                  <input type="date" id="fecha" name="fecha" required>
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="hora">Hora *</label>
+                  <input type="time" id="hora" name="hora" min="12:00" max="22:00" required>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="personas">Número de personas *</label>
+                <select id="personas" name="personas" required>
+                  <option value="">Selecciona...</option>
+                  <option value="1">1 persona</option>
+                  <option value="2">2 personas</option>
+                  <option value="3">3 personas</option>
+                  <option value="4">4 personas</option>
+                  <option value="5">5 personas</option>
+                  <option value="6">6 personas</option>
+                  <option value="7">7 personas</option>
+                  <option value="8">8 personas</option>
+                  <option value="9">9 personas</option>
+                  <option value="10">10 personas</option>
+                  <option value="11">11-15 personas</option>
+                  <option value="16">16-20 personas</option>
+                </select>
+                <span class="form-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="comentarios">Comentarios adicionales</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Alergias, ocasión especial, preferencias de mesa..." maxlength="500"></textarea>
+                <span class="form-error" role="alert"></span>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn--primary">Confirmar Reservación</button>
+              </div>
+            </form>
+
+            <div class="form-success" id="form-success" role="status">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <h3>¡Reservación Enviada!</h3>
+              <p>Gracias por elegir Sushi Charo. Te contactaremos pronto para confirmar tu reservación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logos/logo.svg" alt="Sushi Charo" width="160" height="48">
+          <p>Sé original, sé Sushi Charo. Experiencia gastronómica japonesa de alto nivel.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/Sushicharo" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://facebook.com/SushiCharo" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__title">Enlaces Rápidos</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Contacto</h3>
+          <ul class="footer__contact">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/></svg>
+              <span>861 619 9012<br>861 613 2211</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+              <span>Av. Insurgentes 1234, Col. Centro, Villahermosa, Tabasco</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Horarios</h3>
+          <ul class="footer__hours">
+            <li><span>Lunes - Jueves</span><span>12:00 - 22:00</span></li>
+            <li><span>Viernes - Sábado</span><span>12:00 - 23:00</span></li>
+            <li><span>Domingo</span><span>12:00 - 21:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Sushi Charo. Todos los derechos reservados.</p>
+        <p>Diseñado con pasión por la gastronomía japonesa.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animaciones.js"></script>
+  <script src="js/reservaciones.js"></script>
+</body>
+</html>

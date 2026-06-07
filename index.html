@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sushi Charo — Restaurante japonés premium. Sé original, sé Sushi Charo. Sushi fresco, rolls artesanales y experiencia gastronómica única.">
+  <meta name="keywords" content="sushi, restaurante japonés, Sushi Charo, rolls, sashimi, reservaciones">
+  <meta name="author" content="Sushi Charo">
+  <meta property="og:title" content="Sushi Charo — Restaurante Japonés Premium">
+  <meta property="og:description" content="Sé original, sé Sushi Charo. Experiencia gastronómica japonesa de alto nivel.">
+  <meta property="og:type" content="website">
+  <title>Sushi Charo — Restaurante Japonés Premium</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logos/logo.svg">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Sushi Charo - Inicio">
+        <img src="assets/logos/logo.svg" alt="Logo Sushi Charo" width="160" height="48">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="menu.html" class="nav__link">Menú</a></li>
+          <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+          <li><a href="equipo.html" class="nav__link">Equipo</a></li>
+          <li><a href="galeria.html" class="nav__link">Galería</a></li>
+          <li><a href="resenas.html" class="nav__link">Reseñas</a></li>
+          <li><a href="reservaciones.html" class="nav__link">Reservaciones</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Inicio</a></li>
+      <li><a href="menu.html" class="mobile-nav__link">Menú</a></li>
+      <li><a href="nosotros.html" class="mobile-nav__link">Nosotros</a></li>
+      <li><a href="equipo.html" class="mobile-nav__link">Equipo</a></li>
+      <li><a href="galeria.html" class="mobile-nav__link">Galería</a></li>
+      <li><a href="resenas.html" class="mobile-nav__link">Reseñas</a></li>
+      <li><a href="reservaciones.html" class="mobile-nav__link">Reservaciones</a></li>
+      <li><a href="contacto.html" class="mobile-nav__link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-label="Bienvenida">
+      <div class="hero__media" data-parallax="0.2">
+        <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=1920&q=85" alt="Sushi artesanal de Sushi Charo" width="1920" height="1080" fetchpriority="high">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="hero__badge" data-aos="fade-in">Restaurante Japonés Premium</span>
+        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">Sushi <span>Charo</span></h1>
+        <p class="hero__slogan" data-aos="fade-up" data-aos-delay="200">"Sé original, sé Sushi Charo"</p>
+        <div class="hero__actions" data-aos="fade-up" data-aos-delay="300">
+          <a href="menu.html" class="btn btn--primary">Ver Menú</a>
+          <a href="reservaciones.html" class="btn btn--outline">Reservar Mesa</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Descubre</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About Teaser -->
+    <section class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-teaser">
+          <div class="about-teaser__image" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Interior elegante de Sushi Charo" loading="lazy" width="800" height="600">
+          </div>
+          <div class="about-teaser__content" data-aos="fade-left">
+            <span class="section-label">Nuestra Esencia</span>
+            <h2 id="about-heading" class="section-title">Arte Culinario Japonés</h2>
+            <div class="divider"></div>
+            <p>En Sushi Charo fusionamos la tradición japonesa con un toque contemporáneo único. Cada pieza de sushi es una obra de arte elaborada con ingredientes de la más alta calidad, seleccionados diariamente para garantizar frescura y sabor excepcional.</p>
+            <a href="nosotros.html" class="btn btn--ghost" style="margin-top: 1.5rem;">Conoce Nuestra Historia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="section featured section--dark" aria-labelledby="featured-heading">
+      <div class="container">
+        <header class="featured__header" data-aos="fade-up">
+          <span class="section-label">Destacados</span>
+          <h2 id="featured-heading" class="section-title">Platillos Destacados</h2>
+          <p class="section-subtitle">Los favoritos de nuestros comensales, preparados con pasión y maestría.</p>
+        </header>
+        <div class="featured__grid">
+          <article class="featured__card" data-aos="fade-up" data-aos-delay="0">
+            <img class="featured__card-image" src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=600&q=80" alt="Dragon Roll especial" loading="lazy" width="600" height="375">
+            <div class="featured__card-overlay"></div>
+            <div class="featured__card-content">
+              <span class="featured__card-tag">Roll Especial</span>
+              <h3 class="featured__card-title">Dragon Roll</h3>
+              <p class="featured__card-price">$199 MXN</p>
+            </div>
+          </article>
+          <article class="featured__card" data-aos="fade-up" data-aos-delay="100">
+            <img class="featured__card-image" src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=600&q=80" alt="Poke Bowl Salmón" loading="lazy" width="600" height="375">
+            <div class="featured__card-overlay"></div>
+            <div class="featured__card-content">
+              <span class="featured__card-tag">Bowl</span>
+              <h3 class="featured__card-title">Poke Bowl Salmón</h3>
+              <p class="featured__card-price">$219 MXN</p>
+            </div>
+          </article>
+          <article class="featured__card" data-aos="fade-up" data-aos-delay="200">
+            <img class="featured__card-image" src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&q=80" alt="Charola Premium" loading="lazy" width="600" height="375">
+            <div class="featured__card-overlay"></div>
+            <div class="featured__card-content">
+              <span class="featured__card-tag">Charola</span>
+              <h3 class="featured__card-title">Charola Premium</h3>
+              <p class="featured__card-price">$549 MXN</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section stats" aria-label="Estadísticas">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item" data-aos="zoom-in">
+            <p class="stats__number" data-counter="15" data-suffix="+">0</p>
+            <p class="stats__label">Años de Experiencia</p>
+          </div>
+          <div class="stats__item" data-aos="zoom-in" data-aos-delay="100">
+            <p class="stats__number" data-counter="72">0</p>
+            <p class="stats__label">Platillos en el Menú</p>
+          </div>
+          <div class="stats__item" data-aos="zoom-in" data-aos-delay="200">
+            <p class="stats__number" data-counter="50000" data-suffix="+">0</p>
+            <p class="stats__label">Clientes Satisfechos</p>
+          </div>
+          <div class="stats__item" data-aos="zoom-in" data-aos-delay="300">
+            <p class="stats__number">4.9</p>
+            <p class="stats__label">Calificación Promedio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Preview -->
+    <section class="section reviews-preview" aria-labelledby="reviews-heading">
+      <div class="container">
+        <header class="reviews-preview__header" data-aos="fade-up">
+          <span class="section-label">Testimonios</span>
+          <h2 id="reviews-heading" class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+        </header>
+        <div class="reviews-preview__grid">
+          <article class="review-card" data-aos="fade-up">
+            <div class="review-card__header">
+              <img class="review-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=112&q=80" alt="María González" loading="lazy" width="56" height="56">
+              <div>
+                <p class="review-card__name">María González</p>
+                <div class="stars" aria-label="5 estrellas">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="review-card__date">Hace 2 semanas</p>
+              </div>
+            </div>
+            <p class="review-card__text">"El mejor sushi que he probado. La frescura del pescado y la presentación son impecables. El Dragon Roll es simplemente espectacular."</p>
+          </article>
+          <article class="review-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="review-card__header">
+              <img class="review-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=112&q=80" alt="Carlos Mendoza" loading="lazy" width="56" height="56">
+              <div>
+                <p class="review-card__name">Carlos Mendoza</p>
+                <div class="stars" aria-label="5 estrellas">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="review-card__date">Hace 1 mes</p>
+              </div>
+            </div>
+            <p class="review-card__text">"Ambiente increíble y servicio de primera. Las Charolas Premium son perfectas para compartir. Definitivamente mi restaurante favorito."</p>
+          </article>
+          <article class="review-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="review-card__header">
+              <img class="review-card__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=112&q=80" alt="Ana Ruiz" loading="lazy" width="56" height="56">
+              <div>
+                <p class="review-card__name">Ana Ruiz</p>
+                <div class="stars" aria-label="5 estrellas">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="review-card__date">Hace 3 semanas</p>
+              </div>
+            </div>
+            <p class="review-card__text">"Celebramos nuestro aniversario aquí y fue mágico. La atención personalizada y la calidad de cada platillo superaron nuestras expectativas."</p>
+          </article>
+        </div>
+        <div class="reviews-preview__cta" data-aos="fade-up">
+          <a href="resenas.html" class="btn btn--ghost">Ver Todas las Reseñas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="section gallery-preview section--dark" aria-labelledby="gallery-heading">
+      <div class="container">
+        <header class="gallery-preview__header" data-aos="fade-up">
+          <span class="section-label">Galería</span>
+          <h2 id="gallery-heading" class="section-title">Momentos Sushi Charo</h2>
+        </header>
+        <div class="gallery-preview__grid">
+          <div class="gallery-preview__item gallery-preview__item--large" data-aos="zoom-in">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=800&q=80" alt="Charola de sushi" loading="lazy" width="800" height="450">
+          </div>
+          <div class="gallery-preview__item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&q=80" alt="Sashimi fresco" loading="lazy" width="400" height="400">
+          </div>
+          <div class="gallery-preview__item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" alt="Interior del restaurante" loading="lazy" width="400" height="400">
+          </div>
+          <div class="gallery-preview__item" data-aos="zoom-in" data-aos-delay="300">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80" alt="Chef preparando sushi" loading="lazy" width="400" height="400">
+          </div>
+          <div class="gallery-preview__item" data-aos="zoom-in" data-aos-delay="400">
+            <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1c56e?w=400&q=80" alt="Roll horneado" loading="lazy" width="400" height="400">
+          </div>
+        </div>
+        <div class="gallery-preview__cta" data-aos="fade-up">
+          <a href="galeria.html" class="btn btn--primary">Explorar Galería</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="cta-section__bg">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1920&q=80" alt="" loading="lazy" width="1920" height="1080" aria-hidden="true">
+      </div>
+      <div class="cta-section__overlay"></div>
+      <div class="container cta-section__content">
+        <h2 id="cta-heading" data-aos="fade-up">Reserva Tu Experiencia</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Vive la auténtica experiencia japonesa. Reserva tu mesa y déjate sorprender por los sabores de Sushi Charo.</p>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <a href="reservaciones.html" class="btn btn--primary">Reservar Ahora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logos/logo.svg" alt="Sushi Charo" width="160" height="48">
+          <p>Sé original, sé Sushi Charo. Experiencia gastronómica japonesa de alto nivel con ingredientes frescos y técnicas artesanales.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/Sushicharo" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://facebook.com/SushiCharo" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__title">Enlaces Rápidos</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Contacto</h3>
+          <ul class="footer__contact">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/></svg>
+              <span>861 619 9012<br>861 613 2211</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+              <span>Av. Insurgentes 1234, Col. Centro, Villahermosa, Tabasco</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Horarios</h3>
+          <ul class="footer__hours">
+            <li><span>Lunes - Jueves</span><span>12:00 - 22:00</span></li>
+            <li><span>Viernes - Sábado</span><span>12:00 - 23:00</span></li>
+            <li><span>Domingo</span><span>12:00 - 21:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Sushi Charo. Todos los derechos reservados.</p>
+        <p>Diseñado con pasión por la gastronomía japonesa.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animaciones.js"></script>
+</body>
+</html>
